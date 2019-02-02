@@ -1,0 +1,8 @@
+<h1 >Home</h1>
+
+<ul *ngIf = "filteredProducts">
+  <li *ngFor = "let prod of filteredProducts">
+    <img [src] = "prod.overview.media.primaryImage.thumbnailUrl">
+    <p>{{prod.overview.names.short}}</p>
+  </li>
+</ul>
